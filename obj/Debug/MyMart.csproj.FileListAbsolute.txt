@@ -1,0 +1,7 @@
+D:\C#\C# Projects\Console\MyMart\bin\Debug\MyMart.exe.config
+D:\C#\C# Projects\Console\MyMart\bin\Debug\MyMart.exe
+D:\C#\C# Projects\Console\MyMart\bin\Debug\MyMart.pdb
+D:\C#\C# Projects\Console\MyMart\obj\Debug\MyMart.csprojAssemblyReference.cache
+D:\C#\C# Projects\Console\MyMart\obj\Debug\MyMart.csproj.CoreCompileInputs.cache
+D:\C#\C# Projects\Console\MyMart\obj\Debug\MyMart.exe
+D:\C#\C# Projects\Console\MyMart\obj\Debug\MyMart.pdb

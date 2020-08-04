@@ -10,6 +10,15 @@ namespace MyMart
     {
         static void Main(string[] args)
         {
+            Product product = new Product();
+            var pd = product.FindProduct(11);
+            Console.WriteLine();
+
+
+
+
+
+            Console.ReadKey();
         }
     }
 }
