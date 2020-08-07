@@ -26,7 +26,7 @@ namespace MyMart
                 Console.WriteLine("3.Exit");
                 Console.WriteLine("Enter Choice: ");
                 string inp= Console.ReadLine();
-                int inpc = Convert.ToInt32(inp);  //*******
+                int inpc = Convert.ToInt32(inp);  //******* Type Casting here*****
                 if (inpc==1)
                 {
                     var arrUser = new User[]
