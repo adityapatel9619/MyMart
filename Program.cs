@@ -15,6 +15,7 @@ namespace MyMart
 
                 Console.Title = "ShopCart.com";
                 Console.ForegroundColor = ConsoleColor.Yellow;
+                
                 Console.WriteLine(Table.t);
                 Console.ResetColor();
 
