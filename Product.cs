@@ -11,9 +11,10 @@ namespace MyMart
         private double mrp, discount, ourPrice;
 
         //Int property
-        public int ProductId { get { return productID; } set { productID = value; } }
+        //public string ProductId { get { return productID; } set { productID = value; } }
         //Above used backing fields just for trial
         //String property
+        public string ProductId { get; set; }
         public string CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string ProductCode { get; set; }
