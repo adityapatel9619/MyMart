@@ -43,7 +43,7 @@ namespace MyMart
                     var password = Console.ReadLine();
                     Console.Clear();
 
-                   bool succes = false;
+                   bool succes = false;    //bool check
                     foreach (User user in arrUser)
                     {
                         if (username == user.username && password == user.password)
