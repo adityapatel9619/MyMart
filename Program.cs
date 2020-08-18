@@ -21,44 +21,6 @@ namespace MyMart
                 Console.WriteLine(Table.t);
                 Console.ResetColor();
 
-                Console.WriteLine("1.Login & Shop");
-                Console.WriteLine("2.View Cart");
-                Console.WriteLine("3.Exit");
-                Console.WriteLine("Enter Choice: ");
-                string inp= Console.ReadLine();
-                int inpc = Convert.ToInt32(inp);  //******* Type Casting here*****
-                if (inpc==1)
-                {
-                    var arrUser = new User[]
-                    {
-                        new User("asd","123"),
-                        new User("patrickjohn@hotmail.com","321"),
-                        //100 user exculding above 2
-                    };
-
-                    login:
-                    Console.WriteLine("Enter Username:");
-                    var username = Console.ReadLine(); 
-                    Console.WriteLine("Enter Password:");
-                    var password = Console.ReadLine();
-                    Console.Clear();
-
-                   bool succes = false;    //bool check
-                    foreach (User user in arrUser)
-                    {
-                        if (username == user.username && password == user.password)
-                        {
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            Console.WriteLine(Table.t);
-                            Console.ResetColor();
-
-                            Console.WriteLine("\n");
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            Console.WriteLine("Hello {0}\t\t\t\t\t\t\t Login Time: {1}",user.username,DateTime.Now);
-                            Console.ResetColor();
-                            succes = true;
-
-
 
                             string dash = new string('-', 40);
                             Product product1 = new Product()
@@ -235,48 +197,7 @@ namespace MyMart
                             Table.PrintLine();
                             Table.PrintRow(product10.ProductId, product10.Brand, product10.ProductName, product10.ProductDescription, product10.MRP);
                             Table.PrintLine();
-                            //<end>
-
-
-
-
-
-
-
-
-
-                        }
-                        if (!succes)
-                        {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("Try again !!!!");
-                            Console.ResetColor();
-                            goto login;
-                        }
-                    }
-
-
-
-                }
-                else if (inpc==2)
-                {
-
-                }
-                else if (inpc==3)
-                {
-                    Console.WriteLine("\n");
-                    Console.ForegroundColor = ConsoleColor.DarkGreen;
-                    Console.WriteLine("Thankyou For Visiting");
-                    Console.ResetColor();
-                    Thread.Sleep(1000);
-                    System.Environment.Exit(0);
-
-                }
-
-
-                /*
-                
-                */
+               
                 Console.ReadKey();
             }
             catch (Exception e)
